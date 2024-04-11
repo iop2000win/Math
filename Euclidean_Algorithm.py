@@ -27,3 +27,14 @@ def euclidean_algorithm(a, b):
 
 	else:
 		euclidean_algorithm(b, a%b)
+  
+
+# 최대공약수와 최소공배수의 관계
+def lcm(a, b):
+    
+    return (a * b) / euclidean_algorithm(a, b)
+
+# 파이썬의 경우 math 패키지를 통해 쉽게 구할 수 있다.
+import math
+gcd_ = math.gcd(a, b) # Greatest Common Measure
+lcm_ = math.lcm(a, b) # Least Common Multiple
